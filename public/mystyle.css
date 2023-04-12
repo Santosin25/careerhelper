@@ -1,0 +1,64 @@
+#myBtn {
+  display: none;
+}
+
+/* scrolling */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 0px;
+}
+
+/* nav */
+.sidenav ::first-letter {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* .sidenav a:hover {
+  color: darkgray; 
+} */
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* 
+*/
+.newsletter {
+  background-image: url("../images/about-img.jpg");
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background-size: 100%;
+  object-fit: contain;
+  background-position: 100%;
+}

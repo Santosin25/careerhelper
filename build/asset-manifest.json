@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.09e0523a.css",
+    "main.js": "/static/js/main.ca46016c.js",
+    "static/media/manyCrypto.jpeg": "/static/media/manyCrypto.202955a37c4c4554a67c.jpeg",
+    "static/media/forex.jpeg": "/static/media/forex.b349dd0c5d4abf9463d0.jpeg",
+    "index.html": "/index.html",
+    "main.09e0523a.css.map": "/static/css/main.09e0523a.css.map",
+    "main.ca46016c.js.map": "/static/js/main.ca46016c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09e0523a.css",
+    "static/js/main.ca46016c.js"
+  ]
+}
