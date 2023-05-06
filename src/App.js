@@ -1,7 +1,6 @@
 import React from "react";
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import { Home, Nopage, PrivacyPolicy, Contract, About } from "./pages/index";
 
 import { Header, Footer } from "./components/index";
 import {
@@ -9,8 +8,13 @@ import {
   HowToTradeForex,
   TradingStatagies,
   Forex,
+  CareerEdutech,
+  CareerWebDeveloper,
+  ProfessionalCryptoTrader,
+  SustainableIncome,
+  EdutechPassiveIncome,
+  WaysToMakeMoneyWebDeveloper,
 } from "./pages/Blogs/index";
-import Nopage from "./pages/Nopage";
 
 function App() {
   return (
@@ -23,10 +27,35 @@ function App() {
           <Route path="blogs/ChoosingBroker" element={<ChoosingBroker />} />
           <Route path="blogs/HowToTradeForex" element={<HowToTradeForex />} />
           <Route path="blogs/Forex" element={<Forex />} />
+          <Route path="about" element={<About />} />
+          <Route path="contract" element={<Contract />} />
+          <Route path="privacyPolicy" element={<PrivacyPolicy />} />
+
+          <Route path="blogs/careerEdutech" element={<CareerEdutech />} />
+          <Route
+            path="blogs/careerWebDeveloper"
+            element={<CareerWebDeveloper />}
+          />
+          <Route
+            path="blogs/professionalCryptoTrader"
+            element={<ProfessionalCryptoTrader />}
+          />
+          <Route
+            path="blogs/sustainableIncome"
+            element={<SustainableIncome />}
+          />
+          <Route
+            path="blogs/edutechPassiveIncome"
+            element={<EdutechPassiveIncome />}
+          />
+          <Route
+            path="blogs/waysToMakeMoneyWebDeveloper"
+            element={<WaysToMakeMoneyWebDeveloper />}
+          />
           <Route path="*" element={<Nopage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

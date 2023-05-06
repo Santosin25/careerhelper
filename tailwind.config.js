@@ -27,6 +27,7 @@ module.exports = {
       listStyleType: {
         square: "square",
         roman: "upper-roman",
+        number: "number",
       },
     },
   },
